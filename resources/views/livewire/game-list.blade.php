@@ -1,7 +1,7 @@
 <div class="max-w-3xl mx-auto my-10 space-y-10 px-5">
     @foreach($dates as $date => $game)
         <div>
-            <h1 class="w-full font-black text text-white rounded p-3 bg-gradient-to-r from-gray-900 to-gray-600 bg-gradient-to-r">{{ $date }}</h1>
+            <h1 class="w-full font-black text text-white tracking-wider rounded p-3 bg-gradient-to-r from-gray-900 to-gray-600 bg-gradient-to-r">{{ $date }}</h1>
             <ol class="mt-3 text-sm leading-6 lg:col-span-7 xl:col-span-8 space-y-3">
                 @foreach($game as $g)
                     <li class="relative space-x-6 xl:static bg-white rounded shadow overflow-hidden">
