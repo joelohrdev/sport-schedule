@@ -13,7 +13,7 @@
         @vite('resources/css/app.css')
         @livewireStyles
     </head>
-    <body class="antialiased">
+    <body class="antialiased bg-gray-50">
     <livewire:game-list />
     @livewireScripts
     </body>

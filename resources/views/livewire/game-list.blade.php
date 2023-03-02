@@ -1,10 +1,10 @@
 <div class="max-w-3xl mx-auto my-20 space-y-10 px-10">
     @foreach($dates as $date => $game)
         <div>
-            <h1 class="w-full font-black text-2xl text-white rounded-xl p-5 bg-gradient-to-l from-blue-500 to-blue-600">{{ $date }}</h1>
-            <ol class="mt-4 divide-y divide-gray-100 text-sm leading-6 lg:col-span-7 xl:col-span-8 space-y-3">
+            <h1 class="w-full font-black text-xl text-white rounded-xl p-5 bg-gradient-to-l from-blue-500 to-blue-600">{{ $date }}</h1>
+            <ol class="mt-3 text-sm leading-6 lg:col-span-7 xl:col-span-8 space-y-3">
                 @foreach($game as $g)
-                    <li class="relative flex space-x-6 py-6 xl:static bg-gray-200 rounded-xl p-5 text-gray-800">
+                    <li class="relative flex space-x-6 py-6 xl:static bg-white rounded-xl shadow p-5 text-gray-800 border-l-4 @if($g->player->name === 'Kailee') border-sky-800 @else border-orange-500 @endif">
                         <div class="flex-auto">
                             <h3 class="pr-10 font-semibold xl:pr-0">{{ $g->player->name }} vs. {{ $g->opponent }}</h3>
                             <dl class="mt-2 flex flex-col xl:flex-row">
