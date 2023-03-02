@@ -1,4 +1,4 @@
-<div class="max-w-3xl mx-auto my-20 space-y-10 px-10">
+<div class="max-w-3xl mx-auto my-10 space-y-10 px-5">
     @foreach($dates as $date => $game)
         <div>
             <h1 class="w-full font-black text-xl text-white rounded-xl p-5 bg-gradient-to-l from-blue-500 to-blue-600">{{ $date }}</h1>
